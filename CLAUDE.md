@@ -1,0 +1,5 @@
+- this project is a very simple snake game, implemented in vanilla javascript and HTML
+- the entire project should be kept inside a single file
+- the project needs to be responsive and should target laptops, tablets and phones
+- simplicity is key here, both in the code structure and the features. Apply KISS principles
+- the code should make use of modern code features and not try to keep backward compatibility with old browsers
