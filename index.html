@@ -168,6 +168,10 @@
         const centerY = Math.floor(tileCount / 2);
         snake = [{ x: centerX, y: centerY }];
         prevSnake = [{ x: centerX, y: centerY }];
+        dx = 0;
+        dy = 0;
+        dx_next = 0;
+        dy_next = 0;
       }
 
       // Touch handling for swipes
@@ -640,8 +644,6 @@
       function startGame() {
         // Reset game state
         initializeSnakePosition();
-        dx = 0;
-        dy = 0;
         score = 0;
         scoreElement.textContent = score;
         statusElement.textContent = "Speed: 0%";
