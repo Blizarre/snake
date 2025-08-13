@@ -500,13 +500,15 @@
         );
         ctx.fill();
 
-        // Food shine
+        // Food shine (scaled with grid size)
+        const shineRadius = Math.max(2, gridSize * 0.15);
+        const shineOffset = Math.max(2, gridSize * 0.2);
         ctx.fillStyle = "#ff6b6b";
         ctx.beginPath();
         ctx.arc(
-          food.x * gridSize + gridSize * 0.5 - 5,
-          food.y * gridSize + gridSize * 0.5 - 5,
-          5,
+          food.x * gridSize + gridSize * 0.5 - shineOffset,
+          food.y * gridSize + gridSize * 0.5 - shineOffset,
+          shineRadius,
           0,
           6.283185307179586,
         );
